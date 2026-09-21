@@ -23,7 +23,17 @@ The analysis was performed using Python and included:
 - Creating visualizations using Matplotlib
 
 ## Results
+### Study Time vs Final Grade
 
+![Study Time vs Final Grade](plots/studytime_vs_final_grade.png)
+
+### Absences vs Final Grade
+
+![Absences vs Final Grade](plots/absences_vs_final_grade.png)
+
+### Previous Failures vs Final Grade
+
+![Previous Failures vs Final Grade](plots/failures_vs_final_grade.png)
 ### Absences vs Final Grade
 
 The correlation between the number of absences and the final grade (G3) was:

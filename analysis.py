@@ -24,7 +24,7 @@ plt.xlabel("Weekly Study Time Level")
 plt.ylabel("Average Final Grade (G3)")
 
 plt.title("Average Final Grade by Weekly Study Time")
-
+plt.savefig("plots/studytime_vs_final_grade.png", bbox_inches="tight")
 plt.show()
 print(data[["absences", "G3"]].head(10))
 print(data.groupby("absences")["G3"].mean())
@@ -33,7 +33,7 @@ plt.scatter(data["absences"], data["G3"])
 plt.xlabel("Number of Absences")
 plt.ylabel("Final Grade (G3)")
 plt.title("Absences vs Final Grade")
-
+plt.savefig("plots/absences_vs_final_grade.png", bbox_inches="tight")
 plt.show()
 print(data["absences"].corr(data["G3"]))
 print(data.groupby("failures")["G3"].mean())
@@ -44,7 +44,7 @@ data.groupby("failures")["G3"].mean().plot(kind="bar")
 plt.xlabel("Number of Previous Failures")
 plt.ylabel("Average Final Grade (G3)")
 plt.title("Average Final Grade by Previous Failures")
-
+plt.savefig("plots/failures_vs_final_grade.png", bbox_inches="tight")
 plt.show()
 
 print(data.groupby("studytime")["G3"].agg(["count", "mean"]))
